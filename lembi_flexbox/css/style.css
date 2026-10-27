@@ -1,0 +1,160 @@
+/* These base styles set the page font, colors, and simple spacing. */
+body {
+  margin: 0;
+  padding: 24px;
+  background: #f4f6f2;
+  color: #23332b;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* The header and main content share a width and stay centered on the page. */
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+}
+
+/* Section spacing separates the three examples so each layout is easy to see. */
+section {
+  margin: 32px 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* Nav bar based on the Nav Bar preset.
+   display:flex puts the logo and links in a row. space-between pushes them
+   to opposite ends, and center lines them up vertically. */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #234f3d;
+}
+
+/* The logo is the name of the site; this class keeps it readable on the dark bar. */
+.logo {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* The list of navigation links is a flex container, and gap spaces the links evenly. */
+.navlinks {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navlinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.navlinks a:hover,
+.navlinks a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Centered hero based on the Perfect Center preset.
+   Flexbox centers the headline on both axes; min-height gives it room to center vertically. */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-height: 300px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #dcebdc;
+  text-align: center;
+}
+
+.hero-image {
+  width: 120px;
+  height: auto;
+}
+
+.hero h3 {
+  max-width: 600px;
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Card Row based on the Card Row preset.
+   flex-wrap lets cards move onto new lines; gap adds space between them. */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Each card can grow, shrink, or wrap, starting at a width of 200 pixels. */
+.card {
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  min-height: 130px;
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 6px #23332b18;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #234f3d;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+/* The footer is centered and separated from the examples by a top border. */
+footer {
+  padding: 16px 0;
+  border-top: 1px solid #cbd5cb;
+  color: #526258;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* On small screens, links can wrap and cards take a full row for easy reading. */
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .navbar,
+  .navlinks {
+    flex-wrap: wrap;
+  }
+
+  .navlinks {
+    gap: 12px;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+}
