@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 100" role="img" aria-labelledby="title">
-  <title id="title">Three flexible layout blocks</title>
-  <rect x="8" y="24" width="48" height="52" rx="10" fill="#ffffff"/>
-  <rect x="66" y="12" width="48" height="76" rx="10" fill="#d9ef9c"/>
-  <rect x="124" y="32" width="48" height="44" rx="10" fill="#ffffff"/>
-  <circle cx="32" cy="50" r="7" fill="#245c46"/>
-  <circle cx="90" cy="38" r="7" fill="#245c46"/>
-  <circle cx="148" cy="54" r="7" fill="#245c46"/>
-</svg>
